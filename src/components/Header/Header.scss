@@ -1,0 +1,57 @@
+@import '../../assets/sass/Colors.scss';
+.Header{
+    background: $lightBlack;
+    height: 100vmin;
+}
+.header__list{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 12px;
+}
+.header__item{
+    border-radius: 12px 0 0 12px ;
+padding: 12px;
+    }
+.header__item a{
+    color:#EA7C69;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.header__logo{
+    padding: 24px;
+    display: block;
+}
+.header__logOut{
+    padding: 24px;
+    display: block;
+    background: transparent;
+    border: none;
+    margin: 0 auto;
+    color:#EA7C69;
+}
+.active{
+    position: relative;
+    background: $lightGray;
+    a{
+        background-color: #EA7C69;
+        color: white;
+    }
+    &::before{
+        content: url(../../assets/img/corner.svg);
+        position: absolute;
+        top: -18px;
+        right: -1px;
+    }
+    &::after{
+        content: url(../../assets/img/corner.svg);
+        position: absolute;
+        bottom: -17.3px;
+        right: -0.15px;
+        transform: rotate(-90deg);
+    }
+}

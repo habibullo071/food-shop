@@ -1,0 +1,150 @@
+@import '../../assets/sass/Colors.scss';
+
+.Orders {
+    min-width: 30%;
+    height: 100vmin;
+    padding: 24px;
+    color: white;
+    background: $lightBlack;
+}
+.order__top {
+    height: 13%;
+}
+.orders__btns {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    width: 214px;
+}
+
+.button {
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid #393C49;
+    color: #EA7C69;
+    background: transparent;
+    padding: 7px 9px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #EA7C69;
+}
+
+.actev {
+    background-color: #EA7C69;
+    color: white;
+}
+
+.actev a {
+    color: white;
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qty {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        margin-left: 30px;
+    }
+}
+
+.order__list {
+    margin: 17% 0 0 0;
+    height: 58%;
+    overflow-y: scroll;
+    border-top: 2px solid #393C49;
+}
+
+.order__item {
+    margin: 20px 0px;
+    margin-left: -30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item__left {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    input {
+        outline: none;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+
+    input {
+        padding: 14px, 96px, 14px, 14px;
+        border-radius: 8px;
+        border: 1px solid #393C49;
+        padding: 14px;
+        background: #2D303E;
+    }
+}
+
+.item__right {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    button {
+        background: transparent;
+        padding: 14px;
+        border-radius: 8px;
+        color: #EA7C69;
+        border: 1px solid #EA7C69;
+    }
+}
+
+.order__num {
+    text-align: center;
+    align-items: center;
+    background: #2D303E;
+    padding: 17px 23px;
+    border: 1px solid #393C49;
+    border-radius: 10px;
+}
+
+.payment {
+    border-top: 2px solid #393C49;
+    position: relative;
+    border: 1px solid #000;
+    text-align: center;
+    align-items: center;
+    background: transparent;
+
+    ul {
+        width: 100%;
+        padding-left: 0; 
+        display: flex;
+        justify-content: space-between;
+    }
+    button {
+        width:  100%;
+        padding: 14px;
+        border-radius: 8px;
+        gap: 8px;
+        border: none;
+        color: white;
+        background: #EA7C69;
+    }
+}
